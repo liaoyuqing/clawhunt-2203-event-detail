@@ -20,8 +20,8 @@ miniprogram/
   pages/event/detail/            活动详情页本体（index.ts/wxml/wxss + rich-text.wxss）
   pages/auth|ticket|signup|index  跳转目标页与入口页（仅用于验证跳转，不是本单范围）
 tests/                           8 个 vitest 测试文件，共 65 条用例
-docs/screenshots/                23 张模拟器截图
-docs/checks/                     机器可读的验收证据（.log）
+docs/screenshots/                19 张模拟器截图（含 overview.png 十态汇总图）
+docs/checks/                     9 份机器可读的验收证据（.log）
 ```
 
 ## 2. 依赖与运行环境
@@ -30,7 +30,7 @@ docs/checks/                     机器可读的验收证据（.log）
 | --- | --- | --- |
 | Node.js | 20 或更高（实测 26.13.1） | 只用于跑测试与类型检查 |
 | npm | 10 或更高（实测 11.20.0） | 安装 `vitest` 与 `TypeScript` |
-| 微信开发者工具 | 1.06 以上（实测基础库 3.18.1） | 编译小程序、模拟器截图取证 |
+| 微信开发者工具 | 稳定版（实测基础库 3.18.1） | 编译小程序、模拟器截图取证 |
 
 **不需要**：后端服务、数据库、任何云端凭据或外部账号；页面数据全部来自 `miniprogram/mock/events.ts`，不需要网络即可运行。
 对接点说明：真实接口是 `GET /api/mini/events/{id}`（返回字段见 `miniprogram/utils/types.ts` 的 `EventDetail`）。本工程把 `miniprogram/mock/events.ts` 的 `findEvent(id, state)` 放在数据入口处，接后端时只需把这一处换成 `wx.request` 并把下划线字段映射成 `EventDetail`，页面渲染与跳转逻辑不变。
@@ -38,7 +38,7 @@ docs/checks/                     机器可读的验收证据（.log）
 ### 2.1 安装与测试
 
 ```bash
-npm install          # 安装 vitest 3.2.7 与 TypeScript 5.9.x，实测 added 52 packages in 4s
+npm install          # 安装 vitest 3.2.7 与 TypeScript 5.9.3，实测 added 52 packages in 3s
 npm test             # vitest run，实测 8 个文件 / 65 条用例全部通过，末行 Tests 65 passed (65)
 npm run typecheck    # tsc --noEmit -p tsconfig.json，实测 EXIT=0 且无输出
 ```
@@ -81,7 +81,9 @@ AppID 用本机测试号 `wxe31bc806057b0c24`（写在 `project.config.json`）�
 | 文件 | 内容 |
 | --- | --- |
 | `docs/checks/vitest.log` | `npm test` 原始输出（8 files / 65 tests） |
-| `docs/checks/tsc.log` | `npx tsc --noEmit` 原始输出（EXIT=0） |
+| `docs/checks/tsc.log` | `npx tsc --noEmit` 原始输出（0 字节，EXIT=0） |
+| `docs/checks/npm-install.log` | 干净副本里 `npm install` 原始输出（added 52 packages in 3s） |
+| `docs/checks/clean-run.log` | 干净副本三条命令的退出码与末行 |
 | `docs/checks/ac1-labels.log` | 10 态：接口 label、页面按钮文案、可点状态、disabled 属性、截图文件名 |
 | `docs/checks/ac2-nav.log` | need_auth / signed / waitlisted / reviewing 点击后的控制台跳转行与页面栈 |
 | `docs/checks/ac3-safe-area.log` | 两档尺寸下底部栏与正文最后一块的几何读数、是否遮挡 |
@@ -90,5 +92,5 @@ AppID 用本机测试号 `wxe31bc806057b0c24`（写在 `project.config.json`）�
 
 ## 6. 已知限制
 
-- 本机开发者工具的 CLI 只提供 `simulator_screenshot`，**不提供切换模拟器机型的命令**；`device` 参数按 iPhone SE 与 iPhone 15 Pro Max 的真实屏幕宽度与安全区数值排版并渲染，截图画面里的顶部标记会写明用的是哪一档尺寸与安全区高度，但不是开发者工具机型下拉框切出来的。需要严格按机型下拉框取证时，在开发者工具里手动切换机型后重跑第 4 步命令即可。
+- 本机开发者工具的 CLI 只提供 `simulator_screenshot`，**不提供切换模拟器机型的命令**；`device` 参数按 iPhone SE 与 iPhone 15 Pro Max 的真实屏幕宽度与安全区数值（375×667 / 安全区 0，430×932 / 安全区 34）排版并渲染，截图画面顶部的深色标记会写明当前是哪一档尺寸与安全区高度，但它不是开发者工具机型下拉框切出来的。需要严格按机型下拉框取证时，在开发者工具里手动切换机型后重跑第 4 步命令即可，页面代码不需要改动。
 - 模拟器不能导出视频，因此跳转类验收用「真实点击 + 控制台跳转行 + 页面栈」的日志与调试截图代替录屏，没有录屏文件。
