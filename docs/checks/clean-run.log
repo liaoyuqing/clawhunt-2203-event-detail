@@ -1,0 +1,9 @@
+# 干净副本（复制时排除 node_modules，install 前目录内无 node_modules）三条命令的实测退出码与输出末行；原始输出见同目录 npm-install.log / vitest.log / tsc.log
+1) npm install --no-audit --no-fund  EXIT=0
+   末行: added 52 packages in 3s
+2) npm test                          EXIT=0
+   末行:  Test Files  8 passed (8)
+         Tests  65 passed (65)
+      Start at  00:26:48
+      Duration  5.02s (transform 365ms, setup 0ms, collect 798ms, tests 67ms, environment 2ms, prepare 1.26s)
+3) npx tsc --noEmit                  EXIT=0  输出字节数=0

@@ -1,0 +1,948 @@
+// Fictive fixtures mirroring GET /api/mini/events/{id} for the ten signup states.
+export const EVENTS: any[] = [
+  {
+    "id": "1",
+    "title": "第十二期会员产业链接交流会",
+    "type_label": "专题沙龙",
+    "is_closed_door": false,
+    "signup_state": "can_signup",
+    "signup_state_label": "立即报名",
+    "signup_open_at": null,
+    "gallery": [
+      "/assets/gallery-1.png",
+      "/assets/gallery-2.png",
+      "/assets/gallery-3.png"
+    ],
+    "start_at": "2026-12-18T14:00:00+08:00",
+    "end_at": "2026-12-18T17:30:00+08:00",
+    "space_name": "云栖会员空间 · 三层报告厅",
+    "location_note": "地铁 4 号线云栖站 B 口步行 6 分钟，园区北门出示报名凭证入场。",
+    "quota": {
+      "total": 40,
+      "signed": 18,
+      "waitlist": 2
+    },
+    "guests": [
+      {
+        "avatar": "/assets/avatar-1.png",
+        "name": "林知远",
+        "title": "产业研究负责人"
+      },
+      {
+        "avatar": "/assets/avatar-2.png",
+        "name": "陈可",
+        "title": "会员运营总监"
+      },
+      {
+        "avatar": "/assets/avatar-3.png",
+        "name": "周怿",
+        "title": "供应链顾问"
+      }
+    ],
+    "agenda": [
+      {
+        "time": "14:00",
+        "title": "签到与自由交流",
+        "speaker": "主持人"
+      },
+      {
+        "time": "14:30",
+        "title": "主题分享：会员空间的资源连接",
+        "speaker": "林知远"
+      },
+      {
+        "time": "16:00",
+        "title": "圆桌讨论",
+        "speaker": "陈可 / 周怿"
+      }
+    ],
+    "rich_text_nodes": [
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:0 0 16rpx;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "以下是本次活动的图文介绍，所有内容为虚构演示数据。"
+          }
+        ]
+      },
+      {
+        "name": "img",
+        "attrs": {
+          "src": "/assets/wide-2000.png",
+          "style": "width:2000px;height:600px"
+        }
+      },
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:16rpx 0 0;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "现场提供茶歇与交流区，报名成功后可在我的报名中查看电子票。"
+          }
+        ]
+      }
+    ],
+    "waitlist_position": null,
+    "ticket_id": null,
+    "recap": null
+  },
+  {
+    "id": "2",
+    "title": "第十二期会员产业链接交流会",
+    "type_label": "圆桌对谈",
+    "is_closed_door": true,
+    "signup_state": "can_waitlist",
+    "signup_state_label": "加入候补",
+    "signup_open_at": null,
+    "gallery": [
+      "/assets/gallery-1.png",
+      "/assets/gallery-2.png",
+      "/assets/gallery-3.png"
+    ],
+    "start_at": "2026-12-18T14:00:00+08:00",
+    "end_at": "2026-12-19T17:30:00+08:00",
+    "space_name": "云栖会员空间 · 三层报告厅",
+    "location_note": "地铁 4 号线云栖站 B 口步行 6 分钟，园区北门出示报名凭证入场。",
+    "quota": {
+      "total": 20,
+      "signed": 20,
+      "waitlist": 9
+    },
+    "guests": [
+      {
+        "avatar": "/assets/avatar-1.png",
+        "name": "林知远",
+        "title": "产业研究负责人"
+      },
+      {
+        "avatar": "/assets/avatar-2.png",
+        "name": "陈可",
+        "title": "会员运营总监"
+      },
+      {
+        "avatar": "/assets/avatar-3.png",
+        "name": "周怿",
+        "title": "供应链顾问"
+      }
+    ],
+    "agenda": [
+      {
+        "time": "14:00",
+        "title": "签到与自由交流",
+        "speaker": "主持人"
+      },
+      {
+        "time": "14:30",
+        "title": "主题分享：会员空间的资源连接",
+        "speaker": "林知远"
+      },
+      {
+        "time": "16:00",
+        "title": "圆桌讨论",
+        "speaker": "陈可 / 周怿"
+      }
+    ],
+    "rich_text_nodes": [
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:0 0 16rpx;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "以下是本次活动的图文介绍，所有内容为虚构演示数据。"
+          }
+        ]
+      },
+      {
+        "name": "img",
+        "attrs": {
+          "src": "/assets/wide-2000.png",
+          "style": "width:2000px;height:600px"
+        }
+      },
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:16rpx 0 0;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "现场提供茶歇与交流区，报名成功后可在我的报名中查看电子票。"
+          }
+        ]
+      }
+    ],
+    "waitlist_position": null,
+    "ticket_id": null,
+    "recap": null
+  },
+  {
+    "id": "3",
+    "title": "第十二期会员产业链接交流会",
+    "type_label": "闭门研讨",
+    "is_closed_door": false,
+    "signup_state": "reviewing",
+    "signup_state_label": "审核中",
+    "signup_open_at": null,
+    "gallery": [
+      "/assets/gallery-1.png",
+      "/assets/gallery-2.png",
+      "/assets/gallery-3.png"
+    ],
+    "start_at": "2026-12-18T14:00:00+08:00",
+    "end_at": "2026-12-18T17:30:00+08:00",
+    "space_name": "云栖会员空间 · 三层报告厅",
+    "location_note": "地铁 4 号线云栖站 B 口步行 6 分钟，园区北门出示报名凭证入场。",
+    "quota": {
+      "total": 30,
+      "signed": 7,
+      "waitlist": 0
+    },
+    "guests": [
+      {
+        "avatar": "/assets/avatar-1.png",
+        "name": "林知远",
+        "title": "产业研究负责人"
+      },
+      {
+        "avatar": "/assets/avatar-2.png",
+        "name": "陈可",
+        "title": "会员运营总监"
+      },
+      {
+        "avatar": "/assets/avatar-3.png",
+        "name": "周怿",
+        "title": "供应链顾问"
+      }
+    ],
+    "agenda": [
+      {
+        "time": "14:00",
+        "title": "签到与自由交流",
+        "speaker": "主持人"
+      },
+      {
+        "time": "14:30",
+        "title": "主题分享：会员空间的资源连接",
+        "speaker": "林知远"
+      },
+      {
+        "time": "16:00",
+        "title": "圆桌讨论",
+        "speaker": "陈可 / 周怿"
+      }
+    ],
+    "rich_text_nodes": [
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:0 0 16rpx;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "以下是本次活动的图文介绍，所有内容为虚构演示数据。"
+          }
+        ]
+      },
+      {
+        "name": "img",
+        "attrs": {
+          "src": "/assets/wide-2000.png",
+          "style": "width:2000px;height:600px"
+        }
+      },
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:16rpx 0 0;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "现场提供茶歇与交流区，报名成功后可在我的报名中查看电子票。"
+          }
+        ]
+      }
+    ],
+    "waitlist_position": null,
+    "ticket_id": null,
+    "recap": null
+  },
+  {
+    "id": "4",
+    "title": "第十二期会员产业链接交流会",
+    "type_label": "专题沙龙",
+    "is_closed_door": true,
+    "signup_state": "signed",
+    "signup_state_label": "查看电子票",
+    "signup_open_at": null,
+    "gallery": [
+      "/assets/gallery-1.png",
+      "/assets/gallery-2.png",
+      "/assets/gallery-3.png"
+    ],
+    "start_at": "2026-12-18T14:00:00+08:00",
+    "end_at": "2026-12-18T17:30:00+08:00",
+    "space_name": "云栖会员空间 · 三层报告厅",
+    "location_note": "地铁 4 号线云栖站 B 口步行 6 分钟，园区北门出示报名凭证入场。",
+    "quota": {
+      "total": 60,
+      "signed": 60,
+      "waitlist": 0
+    },
+    "guests": [
+      {
+        "avatar": "/assets/avatar-1.png",
+        "name": "林知远",
+        "title": "产业研究负责人"
+      },
+      {
+        "avatar": "/assets/avatar-2.png",
+        "name": "陈可",
+        "title": "会员运营总监"
+      },
+      {
+        "avatar": "/assets/avatar-3.png",
+        "name": "周怿",
+        "title": "供应链顾问"
+      }
+    ],
+    "agenda": [
+      {
+        "time": "14:00",
+        "title": "签到与自由交流",
+        "speaker": "主持人"
+      },
+      {
+        "time": "14:30",
+        "title": "主题分享：会员空间的资源连接",
+        "speaker": "林知远"
+      },
+      {
+        "time": "16:00",
+        "title": "圆桌讨论",
+        "speaker": "陈可 / 周怿"
+      }
+    ],
+    "rich_text_nodes": [
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:0 0 16rpx;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "以下是本次活动的图文介绍，所有内容为虚构演示数据。"
+          }
+        ]
+      },
+      {
+        "name": "img",
+        "attrs": {
+          "src": "/assets/wide-2000.png",
+          "style": "width:2000px;height:600px"
+        }
+      },
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:16rpx 0 0;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "现场提供茶歇与交流区，报名成功后可在我的报名中查看电子票。"
+          }
+        ]
+      }
+    ],
+    "waitlist_position": null,
+    "ticket_id": "T20261218007",
+    "recap": null
+  },
+  {
+    "id": "5",
+    "title": "第十二期会员产业链接交流会",
+    "type_label": "圆桌对谈",
+    "is_closed_door": false,
+    "signup_state": "waitlisted",
+    "signup_state_label": "候补第 3 位",
+    "signup_open_at": null,
+    "gallery": [
+      "/assets/gallery-1.png",
+      "/assets/gallery-2.png",
+      "/assets/gallery-3.png"
+    ],
+    "start_at": "2026-12-18T14:00:00+08:00",
+    "end_at": "2026-12-19T17:30:00+08:00",
+    "space_name": "云栖会员空间 · 三层报告厅",
+    "location_note": "地铁 4 号线云栖站 B 口步行 6 分钟，园区北门出示报名凭证入场。",
+    "quota": {
+      "total": 50,
+      "signed": 40,
+      "waitlist": 4
+    },
+    "guests": [
+      {
+        "avatar": "/assets/avatar-1.png",
+        "name": "林知远",
+        "title": "产业研究负责人"
+      },
+      {
+        "avatar": "/assets/avatar-2.png",
+        "name": "陈可",
+        "title": "会员运营总监"
+      },
+      {
+        "avatar": "/assets/avatar-3.png",
+        "name": "周怿",
+        "title": "供应链顾问"
+      }
+    ],
+    "agenda": [
+      {
+        "time": "14:00",
+        "title": "签到与自由交流",
+        "speaker": "主持人"
+      },
+      {
+        "time": "14:30",
+        "title": "主题分享：会员空间的资源连接",
+        "speaker": "林知远"
+      },
+      {
+        "time": "16:00",
+        "title": "圆桌讨论",
+        "speaker": "陈可 / 周怿"
+      }
+    ],
+    "rich_text_nodes": [
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:0 0 16rpx;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "以下是本次活动的图文介绍，所有内容为虚构演示数据。"
+          }
+        ]
+      },
+      {
+        "name": "img",
+        "attrs": {
+          "src": "/assets/wide-2000.png",
+          "style": "width:2000px;height:600px"
+        }
+      },
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:16rpx 0 0;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "现场提供茶歇与交流区，报名成功后可在我的报名中查看电子票。"
+          }
+        ]
+      }
+    ],
+    "waitlist_position": 3,
+    "ticket_id": null,
+    "recap": null
+  },
+  {
+    "id": "6",
+    "title": "第十二期会员产业链接交流会",
+    "type_label": "闭门研讨",
+    "is_closed_door": true,
+    "signup_state": "need_auth",
+    "signup_state_label": "认证后报名",
+    "signup_open_at": null,
+    "gallery": [
+      "/assets/gallery-1.png",
+      "/assets/gallery-2.png",
+      "/assets/gallery-3.png"
+    ],
+    "start_at": "2026-12-18T14:00:00+08:00",
+    "end_at": "2026-12-18T17:30:00+08:00",
+    "space_name": "云栖会员空间 · 三层报告厅",
+    "location_note": "地铁 4 号线云栖站 B 口步行 6 分钟，园区北门出示报名凭证入场。",
+    "quota": {
+      "total": 80,
+      "signed": 33,
+      "waitlist": 1
+    },
+    "guests": [
+      {
+        "avatar": "/assets/avatar-1.png",
+        "name": "林知远",
+        "title": "产业研究负责人"
+      },
+      {
+        "avatar": "/assets/avatar-2.png",
+        "name": "陈可",
+        "title": "会员运营总监"
+      },
+      {
+        "avatar": "/assets/avatar-3.png",
+        "name": "周怿",
+        "title": "供应链顾问"
+      }
+    ],
+    "agenda": [
+      {
+        "time": "14:00",
+        "title": "签到与自由交流",
+        "speaker": "主持人"
+      },
+      {
+        "time": "14:30",
+        "title": "主题分享：会员空间的资源连接",
+        "speaker": "林知远"
+      },
+      {
+        "time": "16:00",
+        "title": "圆桌讨论",
+        "speaker": "陈可 / 周怿"
+      }
+    ],
+    "rich_text_nodes": [
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:0 0 16rpx;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "以下是本次活动的图文介绍，所有内容为虚构演示数据。"
+          }
+        ]
+      },
+      {
+        "name": "img",
+        "attrs": {
+          "src": "/assets/wide-2000.png",
+          "style": "width:2000px;height:600px"
+        }
+      },
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:16rpx 0 0;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "现场提供茶歇与交流区，报名成功后可在我的报名中查看电子票。"
+          }
+        ]
+      }
+    ],
+    "waitlist_position": null,
+    "ticket_id": null,
+    "recap": null
+  },
+  {
+    "id": "7",
+    "title": "第十二期会员产业链接交流会",
+    "type_label": "专题沙龙",
+    "is_closed_door": false,
+    "signup_state": "not_open",
+    "signup_state_label": "12 月 5 日开放报名",
+    "signup_open_at": "2026-12-05T10:00:00+08:00",
+    "gallery": [
+      "/assets/gallery-1.png",
+      "/assets/gallery-2.png",
+      "/assets/gallery-3.png"
+    ],
+    "start_at": "2026-12-18T14:00:00+08:00",
+    "end_at": "2026-12-18T17:30:00+08:00",
+    "space_name": "云栖会员空间 · 三层报告厅",
+    "location_note": "地铁 4 号线云栖站 B 口步行 6 分钟，园区北门出示报名凭证入场。",
+    "quota": {
+      "total": 25,
+      "signed": 0,
+      "waitlist": 0
+    },
+    "guests": [
+      {
+        "avatar": "/assets/avatar-1.png",
+        "name": "林知远",
+        "title": "产业研究负责人"
+      },
+      {
+        "avatar": "/assets/avatar-2.png",
+        "name": "陈可",
+        "title": "会员运营总监"
+      },
+      {
+        "avatar": "/assets/avatar-3.png",
+        "name": "周怿",
+        "title": "供应链顾问"
+      }
+    ],
+    "agenda": [
+      {
+        "time": "14:00",
+        "title": "签到与自由交流",
+        "speaker": "主持人"
+      },
+      {
+        "time": "14:30",
+        "title": "主题分享：会员空间的资源连接",
+        "speaker": "林知远"
+      },
+      {
+        "time": "16:00",
+        "title": "圆桌讨论",
+        "speaker": "陈可 / 周怿"
+      }
+    ],
+    "rich_text_nodes": [
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:0 0 16rpx;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "以下是本次活动的图文介绍，所有内容为虚构演示数据。"
+          }
+        ]
+      },
+      {
+        "name": "img",
+        "attrs": {
+          "src": "/assets/wide-2000.png",
+          "style": "width:2000px;height:600px"
+        }
+      },
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:16rpx 0 0;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "现场提供茶歇与交流区，报名成功后可在我的报名中查看电子票。"
+          }
+        ]
+      }
+    ],
+    "waitlist_position": null,
+    "ticket_id": null,
+    "recap": null
+  },
+  {
+    "id": "8",
+    "title": "第十二期会员产业链接交流会",
+    "type_label": "圆桌对谈",
+    "is_closed_door": true,
+    "signup_state": "closed",
+    "signup_state_label": "报名已关闭",
+    "signup_open_at": null,
+    "gallery": [
+      "/assets/gallery-1.png",
+      "/assets/gallery-2.png",
+      "/assets/gallery-3.png"
+    ],
+    "start_at": "2026-12-18T14:00:00+08:00",
+    "end_at": "2026-12-19T17:30:00+08:00",
+    "space_name": "云栖会员空间 · 三层报告厅",
+    "location_note": "地铁 4 号线云栖站 B 口步行 6 分钟，园区北门出示报名凭证入场。",
+    "quota": {
+      "total": 35,
+      "signed": 35,
+      "waitlist": 0
+    },
+    "guests": [
+      {
+        "avatar": "/assets/avatar-1.png",
+        "name": "林知远",
+        "title": "产业研究负责人"
+      },
+      {
+        "avatar": "/assets/avatar-2.png",
+        "name": "陈可",
+        "title": "会员运营总监"
+      },
+      {
+        "avatar": "/assets/avatar-3.png",
+        "name": "周怿",
+        "title": "供应链顾问"
+      }
+    ],
+    "agenda": [
+      {
+        "time": "14:00",
+        "title": "签到与自由交流",
+        "speaker": "主持人"
+      },
+      {
+        "time": "14:30",
+        "title": "主题分享：会员空间的资源连接",
+        "speaker": "林知远"
+      },
+      {
+        "time": "16:00",
+        "title": "圆桌讨论",
+        "speaker": "陈可 / 周怿"
+      }
+    ],
+    "rich_text_nodes": [
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:0 0 16rpx;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "以下是本次活动的图文介绍，所有内容为虚构演示数据。"
+          }
+        ]
+      },
+      {
+        "name": "img",
+        "attrs": {
+          "src": "/assets/wide-2000.png",
+          "style": "width:2000px;height:600px"
+        }
+      },
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:16rpx 0 0;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "现场提供茶歇与交流区，报名成功后可在我的报名中查看电子票。"
+          }
+        ]
+      }
+    ],
+    "waitlist_position": null,
+    "ticket_id": null,
+    "recap": null
+  },
+  {
+    "id": "9",
+    "title": "第十二期会员产业链接交流会",
+    "type_label": "闭门研讨",
+    "is_closed_door": false,
+    "signup_state": "full",
+    "signup_state_label": "名额已满",
+    "signup_open_at": null,
+    "gallery": [
+      "/assets/gallery-1.png",
+      "/assets/gallery-2.png",
+      "/assets/gallery-3.png"
+    ],
+    "start_at": "2026-12-18T14:00:00+08:00",
+    "end_at": "2026-12-18T17:30:00+08:00",
+    "space_name": "云栖会员空间 · 三层报告厅",
+    "location_note": "地铁 4 号线云栖站 B 口步行 6 分钟，园区北门出示报名凭证入场。",
+    "quota": {
+      "total": 12,
+      "signed": 12,
+      "waitlist": 6
+    },
+    "guests": [
+      {
+        "avatar": "/assets/avatar-1.png",
+        "name": "林知远",
+        "title": "产业研究负责人"
+      },
+      {
+        "avatar": "/assets/avatar-2.png",
+        "name": "陈可",
+        "title": "会员运营总监"
+      },
+      {
+        "avatar": "/assets/avatar-3.png",
+        "name": "周怿",
+        "title": "供应链顾问"
+      }
+    ],
+    "agenda": [
+      {
+        "time": "14:00",
+        "title": "签到与自由交流",
+        "speaker": "主持人"
+      },
+      {
+        "time": "14:30",
+        "title": "主题分享：会员空间的资源连接",
+        "speaker": "林知远"
+      },
+      {
+        "time": "16:00",
+        "title": "圆桌讨论",
+        "speaker": "陈可 / 周怿"
+      }
+    ],
+    "rich_text_nodes": [
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:0 0 16rpx;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "以下是本次活动的图文介绍，所有内容为虚构演示数据。"
+          }
+        ]
+      },
+      {
+        "name": "img",
+        "attrs": {
+          "src": "/assets/wide-2000.png",
+          "style": "width:2000px;height:600px"
+        }
+      },
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:16rpx 0 0;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "现场提供茶歇与交流区，报名成功后可在我的报名中查看电子票。"
+          }
+        ]
+      }
+    ],
+    "waitlist_position": null,
+    "ticket_id": null,
+    "recap": null
+  },
+  {
+    "id": "10",
+    "title": "第十二期会员产业链接交流会",
+    "type_label": "专题沙龙",
+    "is_closed_door": true,
+    "signup_state": "ended",
+    "signup_state_label": "活动已结束",
+    "signup_open_at": null,
+    "gallery": [
+      "/assets/gallery-1.png",
+      "/assets/gallery-2.png",
+      "/assets/gallery-3.png"
+    ],
+    "start_at": "2026-12-18T14:00:00+08:00",
+    "end_at": "2026-12-18T17:30:00+08:00",
+    "space_name": "云栖会员空间 · 三层报告厅",
+    "location_note": "地铁 4 号线云栖站 B 口步行 6 分钟，园区北门出示报名凭证入场。",
+    "quota": {
+      "total": 45,
+      "signed": 45,
+      "waitlist": 0
+    },
+    "guests": [
+      {
+        "avatar": "/assets/avatar-1.png",
+        "name": "林知远",
+        "title": "产业研究负责人"
+      },
+      {
+        "avatar": "/assets/avatar-2.png",
+        "name": "陈可",
+        "title": "会员运营总监"
+      },
+      {
+        "avatar": "/assets/avatar-3.png",
+        "name": "周怿",
+        "title": "供应链顾问"
+      }
+    ],
+    "agenda": [
+      {
+        "time": "14:00",
+        "title": "签到与自由交流",
+        "speaker": "主持人"
+      },
+      {
+        "time": "14:30",
+        "title": "主题分享：会员空间的资源连接",
+        "speaker": "林知远"
+      },
+      {
+        "time": "16:00",
+        "title": "圆桌讨论",
+        "speaker": "陈可 / 周怿"
+      }
+    ],
+    "rich_text_nodes": [
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:0 0 16rpx;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "以下是本次活动的图文介绍，所有内容为虚构演示数据。"
+          }
+        ]
+      },
+      {
+        "name": "img",
+        "attrs": {
+          "src": "/assets/wide-2000.png",
+          "style": "width:2000px;height:600px"
+        }
+      },
+      {
+        "name": "p",
+        "attrs": {
+          "style": "margin:16rpx 0 0;font-size:28rpx;color:#3a4252;line-height:1.7"
+        },
+        "children": [
+          {
+            "type": "text",
+            "text": "现场提供茶歇与交流区，报名成功后可在我的报名中查看电子票。"
+          }
+        ]
+      }
+    ],
+    "waitlist_position": null,
+    "ticket_id": null,
+    "recap": {
+      "summary": "本期共 45 位会员到场，现场对接 12 组资源需求，活动回顾见下列图文。",
+      "photos": [
+        "/assets/gallery-1.png",
+        "/assets/gallery-2.png"
+      ]
+    }
+  }
+];
+
+export function findEvent(id: string, state: string | null): any {
+  if (state) {
+    const hit = EVENTS.filter((e) => e.signup_state === state)[0];
+    if (hit) return hit;
+  }
+  const byId = EVENTS.filter((e) => String(e.id) === String(id))[0];
+  return byId || EVENTS[0];
+}

@@ -1,0 +1,11 @@
+state / 接口 signup_state_label / 页面 label / 按钮实测文案 / 可点 / disabled 属性 / 截图
+can_signup / 立即报名 / 立即报名 / 立即报名 / 是 / false / ac1-can_signup.png
+can_waitlist / 加入候补 / 加入候补 / 加入候补 / 是 / false / ac1-can_waitlist.png
+reviewing / 审核中 / 审核中 / 审核中 / 否 / true / ac1-reviewing.png
+signed / 查看电子票 / 查看电子票 / 查看电子票 / 是 / false / ac1-signed.png
+waitlisted / 候补第 3 位 / 候补第 3 位 / 候补第 3 位 / 是 / false / ac1-waitlisted.png
+need_auth / 认证后报名 / 认证后报名 / 认证后报名 / 是 / false / ac1-need_auth.png
+not_open / 12 月 5 日开放报名 / 12 月 5 日开放报名 / 12 月 5 日开放报名 / 否 / true / ac1-not_open.png
+closed / 报名已关闭 / 报名已关闭 / 报名已关闭 / 否 / true / ac1-closed.png
+full / 名额已满 / 名额已满 / 名额已满 / 否 / true / ac1-full.png
+ended / 活动已结束 / 活动已结束 / 活动已结束 / 否 / true / ac1-ended.png

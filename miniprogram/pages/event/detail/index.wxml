@@ -1,0 +1,69 @@
+<view class="page" style="padding-bottom: {{contentPadding}}px">
+  <view wx:if="{{showFrameLabel}}" class="device-badge">尺寸档 {{deviceName}} · 安全区 {{homeIndicatorHeight}}px</view>
+  <gallery images="{{event.gallery}}" />
+
+  <view class="card">
+    <view class="title-row">
+      <text class="title">{{event.title}}</text>
+    </view>
+    <view class="tag-row">
+      <text class="tag tag-type">{{event.typeLabel}}</text>
+      <text wx:if="{{event.isClosedDoor}}" class="tag tag-closed">闭门会</text>
+    </view>
+    <text class="date">{{dateText}}</text>
+  </view>
+
+  <view class="card">
+    <text class="section-title">活动空间</text>
+    <text class="space-name">{{event.spaceName}}</text>
+    <text class="location">{{event.locationNote}}</text>
+  </view>
+
+  <quota-bar percent="{{quota.percent}}" ratio-text="{{quota.ratioText}}" waitlist-text="{{quota.waitlistText}}" />
+
+  <view wx:if="{{sections.guests}}" class="card">
+    <text class="section-title">嘉宾</text>
+    <view class="guest" wx:for="{{event.guests}}" wx:key="name">
+      <image class="avatar" src="{{item.avatar}}" mode="aspectFill" />
+      <view class="guest-text">
+        <text class="guest-name">{{item.name}}</text>
+        <text class="guest-title">{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{sections.agenda}}" class="card">
+    <text class="section-title">议程</text>
+    <view class="agenda-item" wx:for="{{agendaSorted}}" wx:key="time">
+      <text class="agenda-time">{{item.time}}</text>
+      <view class="agenda-body">
+        <text class="agenda-title">{{item.title}}</text>
+        <text class="agenda-speaker">{{item.speaker}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="card" id="rich-detail">
+    <text class="section-title">活动详情</text>
+    <block wx:for="{{segments}}" wx:key="index">
+      <rich-text wx:if="{{item.type === 'rich'}}" class="rich-block" nodes="{{item.nodes}}" />
+      <view wx:else class="rich-image-wrap">
+        <image class="rich-image" src="{{item.src}}" style="max-width:100%;height:auto;" mode="widthFix" data-src="{{item.src}}" bindtap="onPreviewRich" />
+      </view>
+    </block>
+  </view>
+
+  <view wx:if="{{sections.recap}}" class="card" id="recap">
+    <text class="section-title">精彩回顾</text>
+    <text class="recap-text">{{event.recap.summary}}</text>
+    <view class="recap-photos">
+      <image class="recap-photo" wx:for="{{event.recap.photos}}" wx:key="index" src="{{item}}" mode="aspectFill" />
+    </view>
+  </view>
+
+  <view class="footer-space"></view>
+  <view class="signup-bar" id="signup-bar" style="padding-bottom: {{paddingBottom}}px">
+    <view wx:if="{{hint}}" class="signup-hint">{{hint}}</view>
+    <button class="signup-btn {{clickable ? '' : 'signup-btn-disabled'}}" disabled="{{!clickable}}" bindtap="onSignupTap">{{label}}</button>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+
+> clawhunt-2203-event-detail@1.0.0 test
+> vitest run
+
+
+ RUN  v3.2.7 E:/AI接单/Clawhunt/delivery/work/2203/clean
+
+ ✓ tests/share.test.ts (3 tests) 3ms
+ ✓ tests/quota.test.ts (5 tests) 3ms
+ ✓ tests/signup-actions.test.ts (14 tests) 7ms
+ ✓ tests/labels.test.ts (9 tests) 8ms
+ ✓ tests/date.test.ts (7 tests) 7ms
+ ✓ tests/rich-text.test.ts (11 tests) 9ms
+ ✓ tests/safe-area.test.ts (9 tests) 7ms
+ ✓ tests/ended-recap.test.ts (7 tests) 23ms
+
+ Test Files  8 passed (8)
+      Tests  65 passed (65)
+   Start at  00:26:48
+   Duration  5.02s (transform 365ms, setup 0ms, collect 798ms, tests 67ms, environment 2ms, prepare 1.26s)
+

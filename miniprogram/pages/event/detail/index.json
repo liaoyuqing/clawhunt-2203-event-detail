@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "活动详情",
+  "usingComponents": {
+    "gallery": "../../../components/gallery/index",
+    "quota-bar": "../../../components/quota-bar/index"
+  }
+}

@@ -1,0 +1,10 @@
+<view class="quota">
+  <view class="quota-row">
+    <text class="quota-label">报名进度</text>
+    <text class="quota-ratio">{{ratioText}}</text>
+  </view>
+  <view class="quota-track">
+    <view class="quota-fill" style="width: {{percent}}%"></view>
+  </view>
+  <text class="quota-waitlist">{{waitlistText}}</text>
+</view>

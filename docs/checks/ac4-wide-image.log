@@ -1,0 +1,2 @@
+富文本里的 2000px 宽图在运行页实测（renderedWidth 为渲染后宽度，viewportWidth 为页面可用宽度）
+sourceImageWidth=2000px | renderedWidth=334 | renderedHeight=100.2 | wrapperWidth=334 | viewportWidth=390 | overflow=no | rawWidthExceedsViewport=no | screenshot=ac4-wide-image.png

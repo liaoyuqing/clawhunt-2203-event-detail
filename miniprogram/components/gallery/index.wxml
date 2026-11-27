@@ -1,0 +1,5 @@
+<swiper class="gallery" indicator-dots="{{images.length > 1}}" circular autoplay="{{false}}">
+  <swiper-item wx:for="{{images}}" wx:key="index">
+    <image class="gallery-image" src="{{item}}" mode="aspectFill" data-index="{{index}}" bindtap="onPreview" />
+  </swiper-item>
+</swiper>

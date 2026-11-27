@@ -1,0 +1,11 @@
+state | 点击后的跳转日志 | 点击后的页面栈
+need_auth | ["[log]","[navigate] from=event_detail to=/pages/auth/index?redirect=%2Fpages%2Fevent%2Fdetail%2Findex%3Fid%3D6"] | pageStack=[]
+signed | ["[log]","[navigate] from=event_detail to=/pages/ticket/detail/index?id=T20261218007"] | pageStack=[]
+waitlisted | ["[log]","[navigate] from=event_detail to=/pages/signup/mine/index?cancel_hint=1&id=5"] | pageStack=[]
+can_signup | ["[log]","[navigate] from=event_detail to=/pages/signup/form/index?id=1"] | pageStack=[]
+can_waitlist | ["[log]","[navigate] from=event_detail to=/pages/signup/form/index?id=2&mode=waitlist"] | pageStack=[]
+reviewing | (no [navigate] line) | pageStack=[]
+closed | (no [navigate] line) | pageStack=[]
+full | (no [navigate] line) | pageStack=[]
+ended | (no [navigate] line) | pageStack=[]
+not_open | (no [navigate] line) | pageStack=[]

@@ -1,0 +1,33 @@
+.page { min-height: 100vh; background: #f5f6f8; }
+.card { margin: 20rpx 24rpx; padding: 28rpx 32rpx; background: #fff; border-radius: 20rpx; }
+.title-row { display: flex; }
+.title { font-size: 38rpx; font-weight: 700; color: #1f2b3d; line-height: 1.4; }
+.tag-row { margin-top: 16rpx; display: flex; }
+.tag { margin-right: 12rpx; padding: 4rpx 16rpx; border-radius: 8rpx; font-size: 22rpx; }
+.tag-type { background: #eaf1fd; color: #2f6bd8; }
+.tag-closed { background: #fdf1e6; color: #c9741f; }
+.date { display: block; margin-top: 16rpx; font-size: 26rpx; color: #5b6475; }
+.section-title { display: block; font-size: 28rpx; font-weight: 600; color: #1f2b3d; margin-bottom: 16rpx; }
+.space-name { display: block; font-size: 28rpx; color: #1f2b3d; }
+.location { display: block; margin-top: 8rpx; font-size: 24rpx; color: #8b93a3; line-height: 1.6; }
+.guest { display: flex; align-items: center; margin-bottom: 20rpx; }
+.avatar { width: 88rpx; height: 88rpx; border-radius: 44rpx; margin-right: 20rpx; background: #e6ebf2; }
+.guest-text { display: flex; flex-direction: column; }
+.guest-name { font-size: 28rpx; color: #1f2b3d; }
+.guest-title { font-size: 24rpx; color: #8b93a3; }
+.agenda-item { display: flex; margin-bottom: 20rpx; }
+.agenda-time { width: 96rpx; font-size: 26rpx; color: #2f6bd8; }
+.agenda-body { display: flex; flex-direction: column; }
+.agenda-title { font-size: 28rpx; color: #1f2b3d; }
+.agenda-speaker { font-size: 24rpx; color: #8b93a3; }
+.rich-block { display: block; }
+.rich-image-wrap { margin: 16rpx 0; }
+.rich-image { width: 100%; }
+.recap-text { display: block; font-size: 26rpx; color: #3a4252; line-height: 1.7; }
+.recap-photos { margin-top: 16rpx; display: flex; }
+.recap-photo { width: 200rpx; height: 140rpx; border-radius: 12rpx; margin-right: 12rpx; background: #e6ebf2; }
+.footer-space { height: 40rpx; }.signup-bar { position: fixed; left: 0; right: 0; bottom: 0; padding-top: 12rpx; padding-left: 32rpx; padding-right: 32rpx; background: #fff; box-shadow: 0 -4rpx 16rpx rgba(20, 30, 50, 0.06); }
+.signup-hint { font-size: 22rpx; color: #8b93a3; padding-bottom: 10rpx; text-align: center; }
+.signup-btn { height: 88rpx; line-height: 88rpx; border-radius: 44rpx; background: #2f6bd8; color: #fff; font-size: 30rpx; }
+.signup-btn::after { border: none; }
+.signup-btn-disabled { background: #c9ced8; color: #f4f6f9; }.device-badge { padding: 12rpx 32rpx; background: #1f2b3d; color: #dfe6f2; font-size: 22rpx; letter-spacing: 0.5rpx; }

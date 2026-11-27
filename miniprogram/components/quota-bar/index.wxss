@@ -1,0 +1,6 @@
+.quota { padding: 24rpx 32rpx; background: #fff; }
+.quota-row { display: flex; justify-content: space-between; font-size: 26rpx; color: #5b6475; }
+.quota-ratio { font-weight: 600; color: #1f2b3d; }
+.quota-track { margin-top: 14rpx; height: 12rpx; border-radius: 6rpx; background: #eaeef4; overflow: hidden; }
+.quota-fill { height: 12rpx; border-radius: 6rpx; background: #2f6bd8; }
+.quota-waitlist { display: block; margin-top: 12rpx; font-size: 24rpx; color: #8b93a3; }
